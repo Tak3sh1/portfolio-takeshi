@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matérias - Portfólio Takeshi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #e0e0e0;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: blur(8px) brightness(0.6);
+            z-index: -2;
+        }
+
+        .main-content {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(15, 15, 15, 0.7);
+            backdrop-filter: blur(4px);
+        }
+
+        header {
+            background-color: rgba(15, 15, 15, 0.8);
+            padding: 20px;
+            text-align: center;
+            font-size: 15px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .etec-fatec {
+            padding: 60px 20px;
+            min-height: 100vh;
+        }
+
+        h2 {
+
+            margin-bottom: 40px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            text-align: center; 
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(3px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            margin-bottom: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block; 
+            text-align: left;
+            width: 100%;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        li:hover {
+            background-color: rgba(173, 171, 171, 0.3);
+            transform: translateX(5px);
+        }
+
+        .list-item {
+            font-size: 18px;
+            line-height: 1.6;
+            display: inline;
+        }
+
+        .button {
+            background-color: #2c2c2c70;
+            border: none;
+            border-radius: 30px;
+            color: #e0e0e0;
+            padding: 12px 25px;
+            cursor: pointer;
+            font-family: 'Nunito', sans-serif;
+            font-size: 17px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #000000;
+        }
+
+        footer {
+            background-color: rgba(15, 15, 15, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: #e0e0e0;
+            position: relative;
+            z-index: 10;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 25px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            .list-item {
+                font-size: 16px;
+            }
+            
+            .etec-fatec {
+                padding: 40px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 24px;
+            }
+            
+            .list-item {
+                font-size: 15px;
+            }
+            
+            li {
+                padding: 8px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="main-content">
+        <header>
+            <h1>Matérias Cursadas</h1>
+        </header>
+
+        <section class="etec-fatec">
+            <h2>Matérias referentes ao curso de <br> Desenvolvimento de Sistemas</h2>
+            <div class="container">
+                <ul>
+                    <li><p class="list-item">➤ Programação de Aplicativos Mobile I e II</p></li>
+                    <li><p class="list-item">➤ Programação Web I, II e III</p></li>
+                    <li><p class="list-item">➤ Banco de Dados I e II</p></li>
+                    <li><p class="list-item">➤ Técnicas de Programação e Algoritmos</p></li>
+                    <li><p class="list-item">➤ Análise e Projeto de Sistemas</p></li>
+                    <li><p class="list-item">➤ Fundamentos da Informática</p></li>
+                    <li><p class="list-item">➤ Desenvolvimento de Sistemas</p></li>
+                    <li><p class="list-item">➤ Design Digital</p></li>
+                    <li><p class="list-item">➤ Internet, Protocolos e Segurança de Sistemas da Informação</p></li>
+                    <li><p class="list-item">➤ Qualidade e Teste de Software</p></li>
+                    <li><p class="list-item">➤ Sistemas Embarcados</p></li>
+                    <li><p class="list-item">➤ Ética e Cidadania Organizacional</p></li>
+                    <li><p class="list-item">➤ TCC em Desenvolvimento de Sistemas</p></li>
+                </ul>
+            </div>
+
+            <h2>Matérias referentes à <br>graduação em Jogos Digitais</h2>
+            <div class="container">
+                <ul>
+                    <li><p class="list-item">➤ Computação Gráfica I e II</p></li>
+                    <li><p class="list-item">➤ Comunicação e Expressão I e II </p></li>
+                    <li><p class="list-item">➤ Inglês I, II, III, IV, V e VI</p></li>
+                    <li><p class="list-item">➤ Programação para JD I e II</p></li>
+                    <li><p class="list-item">➤ Engenharia de Software em JD I e II</p></li>
+                    <li><p class="list-item">➤ Projeto de Graduação I e II</p></li>
+
+                    <li><p class="list-item">➤ Fundamentos de Tecnologia da Informação</p></li>
+                    <li><p class="list-item">➤ Tecnologias de Redes de Computadores</p></li>
+                    <li><p class="list-item">➤ Arquitetura e Organização de Computadores</p></li>
+                    <li><p class="list-item">➤ Sistemas Operacionais</p></li>
+
+                    <li><p class="list-item">➤ Metodologia da Pesquisa Científico Tecnológica</p></li>
+                    <li><p class="list-item">➤ Princípios de JD</p></li>
+                    <li><p class="list-item">➤ Animação e Som em JD</p></li>
+                    <li><p class="list-item">➤ Ficção Interativa</p></li>
+                    <li><p class="list-item">➤ Design de JD</p></li>
+                    <li><p class="list-item">➤ Roteirização para JD</p></li>
+                    <li><p class="list-item">➤ Jogos Digitais para Consoles</p></li>
+                    <li><p class="list-item">➤ Estudos Avançados em JD</p></li>
+                    <li><p class="list-item">➤ Comportamento e Cognição em JD</p></li>
+                    <li><p class="list-item">➤ Interação Humano Computador em JD</p></li>
+
+                    <li><p class="list-item">➤ Programação Orientada a Objetos para JD</p></li>
+                    <li><p class="list-item">➤ Programação Avançada para JD</p></li>
+                    <li><p class="list-item">➤ Laboratório de Programação de JD</p></li>
+                    <li><p class="list-item">➤ Ferramentas de Desenvolvimento Web</p></li>
+                    <li><p class="list-item">➤ Jogos Digitais para Web</p></li>
+                    <li><p class="list-item">➤ Inteligência Artificial em JD</p></li>
+
+                    <li><p class="list-item">➤ Matemática Discreta</p></li>
+                    <li><p class="list-item">➤ Matemática Aplicada aos JD</p></li>
+                    <li><p class="list-item">➤ Probabilidade e Estatística</p></li>
+                    <li><p class="list-item">➤ Cálculo Diferencial e Integral</p></li>
+                    <li><p class="list-item">➤ Física Aplicada aos JD</p></li>
+
+                    <li><p class="list-item">➤ Direito e Ética Profissional na Sociedade da Informação</p></li>
+                    <li><p class="list-item">➤ Empreendedorismo</p></li>
+                    <li><p class="list-item">➤ Gestão Empresarial em Tecnologia a Informação</p></li>
+                </ul>
+                <a href="index.html"><button class="button">Voltar</button></a>
+            </div>
+        </section>
+
+        <footer>
+            <p>Portfólio por Takeshi</p>
+        </footer>
+    </div>
+</body>
+</html>
